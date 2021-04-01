@@ -14266,6 +14266,194 @@ a.anchor-link {
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h1 id="Exerc&#237;cios-obrigat&#243;rios">Exerc&#237;cios obrigat&#243;rios<a class="anchor-link" href="#Exerc&#237;cios-obrigat&#243;rios">&#182;</a></h1>
 </div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[1]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">random</span>
+
+<span class="k">def</span> <span class="nf">escolhe</span><span class="p">(</span><span class="n">matricula</span><span class="p">):</span>
+    <span class="n">random</span><span class="o">.</span><span class="n">seed</span><span class="p">(</span><span class="n">matricula</span><span class="p">)</span>
+    <span class="n">cap1</span> <span class="o">=</span> <span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">8</span><span class="p">,</span><span class="mi">9</span><span class="p">,</span><span class="mi">11</span><span class="p">,</span><span class="mi">12</span><span class="p">,</span><span class="mi">15</span><span class="p">,</span><span class="mi">16</span><span class="p">,</span><span class="mi">18</span><span class="p">,</span><span class="mi">20</span><span class="p">,</span><span class="mi">21</span><span class="p">,</span><span class="mi">22</span><span class="p">,</span><span class="mi">24</span><span class="p">,</span><span class="mi">26</span><span class="p">,</span><span class="mi">27</span><span class="p">,</span><span class="mi">28</span><span class="p">,</span><span class="mi">30</span><span class="p">,</span><span class="mi">31</span><span class="p">,</span><span class="mi">32</span><span class="p">)</span>    
+    <span class="n">cap2</span> <span class="o">=</span> <span class="p">(</span><span class="mi">36</span><span class="p">,</span><span class="mi">40</span><span class="p">,</span><span class="mi">44</span><span class="p">,</span><span class="mi">45</span><span class="p">,</span><span class="mi">46</span><span class="p">,</span><span class="mi">48</span><span class="p">,</span><span class="mi">50</span><span class="p">,</span><span class="mi">51</span><span class="p">,</span><span class="mi">53</span><span class="p">,</span><span class="mi">55</span><span class="p">,</span><span class="mi">56</span><span class="p">,</span><span class="mi">57</span><span class="p">,</span><span class="mi">59</span><span class="p">,</span><span class="mi">60</span><span class="p">)</span>
+    <span class="n">cap3</span> <span class="o">=</span> <span class="p">(</span><span class="mi">63</span><span class="p">,</span><span class="mi">64</span><span class="p">,</span><span class="mi">65</span><span class="p">,</span><span class="mi">68</span><span class="p">,</span><span class="mi">71</span><span class="p">,</span><span class="mi">72</span><span class="p">,</span><span class="mi">74</span><span class="p">,</span><span class="mi">76</span><span class="p">,</span><span class="mi">78</span><span class="p">,</span><span class="mi">80</span><span class="p">,</span><span class="mi">81</span><span class="p">,</span><span class="mi">84</span><span class="p">)</span>
+    <span class="n">cap4</span> <span class="o">=</span> <span class="p">(</span><span class="mi">85</span><span class="p">,</span><span class="mi">86</span><span class="p">,</span><span class="mi">87</span><span class="p">,</span><span class="mi">89</span><span class="p">,</span><span class="mi">91</span><span class="p">,</span><span class="mi">92</span><span class="p">,</span><span class="mi">94</span><span class="p">,</span><span class="mi">97</span><span class="p">,</span><span class="mi">99</span><span class="p">,</span><span class="mi">101</span><span class="p">,</span><span class="mi">103</span><span class="p">,</span><span class="mi">104</span><span class="p">,</span><span class="mi">106</span><span class="p">)</span>
+    <span class="n">cap5</span> <span class="o">=</span> <span class="p">(</span><span class="mi">111</span><span class="p">,</span><span class="mi">115</span><span class="p">,</span><span class="mi">117</span><span class="p">,</span><span class="mi">118</span><span class="p">,</span><span class="mi">119</span><span class="p">,</span><span class="mi">122</span><span class="p">,</span><span class="mi">123</span><span class="p">,</span><span class="mi">124</span><span class="p">,</span><span class="mi">126</span><span class="p">,</span><span class="mi">127</span><span class="p">,</span><span class="mi">131</span><span class="p">,</span><span class="mi">132</span><span class="p">,</span><span class="mi">133</span><span class="p">)</span>
+    <span class="n">cap6</span> <span class="o">=</span> <span class="p">(</span><span class="mi">138</span><span class="p">,</span><span class="mi">139</span><span class="p">,</span><span class="mi">140</span><span class="p">,</span><span class="mi">141</span><span class="p">,</span><span class="mi">144</span><span class="p">,</span><span class="mi">147</span><span class="p">,</span><span class="mi">148</span><span class="p">)</span>
+    <span class="n">cap7</span> <span class="o">=</span> <span class="p">(</span><span class="mi">152</span><span class="p">,</span><span class="mi">153</span><span class="p">,</span><span class="mi">154</span><span class="p">,</span><span class="mi">155</span><span class="p">,</span><span class="mi">157</span><span class="p">,</span><span class="mi">160</span><span class="p">,</span><span class="mi">161</span><span class="p">,</span><span class="mi">164</span><span class="p">,</span><span class="mi">165</span><span class="p">,</span><span class="mi">166</span><span class="p">,</span><span class="mi">168</span><span class="p">,</span><span class="mi">171</span><span class="p">,</span><span class="mi">172</span><span class="p">)</span>
+    <span class="n">cap8</span> <span class="o">=</span> <span class="p">(</span><span class="mi">174</span><span class="p">,</span><span class="mi">175</span><span class="p">,</span><span class="mi">176</span><span class="p">,</span><span class="mi">177</span><span class="p">,</span><span class="mi">179</span><span class="p">,</span><span class="mi">181</span><span class="p">,</span><span class="mi">182</span><span class="p">,</span><span class="mi">185</span><span class="p">)</span>
+    <span class="k">return</span><span class="p">(</span><span class="n">random</span><span class="o">.</span><span class="n">sample</span><span class="p">(</span><span class="n">cap8</span><span class="p">,</span> <span class="n">k</span><span class="o">=</span><span class="mi">2</span><span class="p">))</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Você deverá entregar os exercícios: &quot;</span><span class="p">,</span> <span class="n">escolhe</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Escreva o número de sua matricula&quot;</span><span class="p">)))</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>Escreva o número de sua matricula170004694
+Você deverá entregar os exercícios:  [179, 176]
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h1 id="Exercise-176:The-NATO-Phonetic-Alphabet">Exercise 176:The NATO Phonetic Alphabet<a class="anchor-link" href="#Exercise-176:The-NATO-Phonetic-Alphabet">&#182;</a></h1><p>A spelling alphabet is a set of words, each of which stands for one of the 26 letters
+in the alphabet. While many letters are easily misheard over a low quality or noisy
+communication channel, the words used to represent the letters in a spelling alphabet
+are generally chosen so that each sounds distinct and is difficult to confuse with any
+other. The NATO phonetic alphabet is a widely used spelling alphabet. Each letter
+and its associated word is shown in Table8.1.
+Write a program that reads a word from the user and then displays its phonetic
+spelling. For example, if the user enters Hello then the program should output
+Hotel Echo Lima Lima Oscar. Your program should use a recursive function to perform this task. Do not use a loop anywhere in your solution. Any non-letter
+characters entered by the user should be ignored.</p>
+
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[8]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">re</span>
+<span class="k">def</span> <span class="nf">convert2nato</span><span class="p">(</span><span class="n">string</span><span class="p">):</span>
+    <span class="n">string</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;\W&#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">string</span><span class="o">.</span><span class="n">upper</span><span class="p">())</span>
+    <span class="n">nato</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;A&#39;</span><span class="p">:</span><span class="s1">&#39;Alpha&#39;</span><span class="p">,</span> <span class="s1">&#39;B&#39;</span><span class="p">:</span><span class="s1">&#39;Bravo&#39;</span><span class="p">,</span><span class="s1">&#39;C&#39;</span><span class="p">:</span><span class="s1">&#39;Charlie&#39;</span><span class="p">,</span> <span class="s1">&#39;D&#39;</span><span class="p">:</span><span class="s1">&#39;Delta&#39;</span><span class="p">,</span> <span class="s1">&#39;E&#39;</span><span class="p">:</span><span class="s1">&#39;Echo&#39;</span><span class="p">,</span> <span class="s1">&#39;F&#39;</span><span class="p">:</span><span class="s1">&#39;Foxtrot&#39;</span><span class="p">,</span> 
+            <span class="s1">&#39;G&#39;</span><span class="p">:</span><span class="s1">&#39;Golf&#39;</span><span class="p">,</span><span class="s2">&quot;H&quot;</span><span class="p">:</span><span class="s2">&quot;Hotel&quot;</span><span class="p">,</span> <span class="s1">&#39;I&#39;</span><span class="p">:</span><span class="s1">&#39;India&#39;</span><span class="p">,</span> <span class="s1">&#39;J&#39;</span><span class="p">:</span><span class="s1">&#39;Juliet&#39;</span><span class="p">,</span> <span class="s1">&#39;K&#39;</span><span class="p">:</span><span class="s1">&#39;Kilo&#39;</span><span class="p">,</span> <span class="s1">&#39;L&#39;</span><span class="p">:</span><span class="s1">&#39;Lima&#39;</span><span class="p">,</span> 
+            <span class="s1">&#39;M&#39;</span><span class="p">:</span><span class="s1">&#39;Mike&#39;</span><span class="p">,</span> <span class="s1">&#39;N&#39;</span><span class="p">:</span><span class="s1">&#39;November&#39;</span><span class="p">,</span> <span class="s1">&#39;O&#39;</span><span class="p">:</span><span class="s1">&#39;Oscar&#39;</span><span class="p">,</span> <span class="s1">&#39;P&#39;</span><span class="p">:</span><span class="s1">&#39;Papa&#39;</span><span class="p">,</span> <span class="s1">&#39;Q&#39;</span><span class="p">:</span><span class="s1">&#39;Quebec&#39;</span><span class="p">,</span>
+            <span class="s1">&#39;R&#39;</span><span class="p">:</span><span class="s1">&#39;Romeo&#39;</span><span class="p">,</span> <span class="s1">&#39;S&#39;</span><span class="p">:</span><span class="s1">&#39;Sierra&#39;</span><span class="p">,</span> <span class="s1">&#39;T&#39;</span><span class="p">:</span><span class="s1">&#39;Tango&#39;</span><span class="p">,</span> <span class="s1">&#39;U&#39;</span><span class="p">:</span><span class="s1">&#39;Uniform&#39;</span><span class="p">,</span> <span class="s1">&#39;V&#39;</span><span class="p">:</span><span class="s1">&#39;Victor&#39;</span><span class="p">,</span> 
+            <span class="s1">&#39;W&#39;</span><span class="p">:</span><span class="s1">&#39;Whiskey&#39;</span><span class="p">,</span> <span class="s1">&#39;X&#39;</span><span class="p">:</span><span class="s1">&#39;Xray&#39;</span><span class="p">,</span> <span class="s1">&#39;Y&#39;</span><span class="p">:</span><span class="s1">&#39;Yankee&#39;</span><span class="p">,</span> <span class="s1">&#39;Z&#39;</span><span class="p">:</span><span class="s1">&#39;Zulu&#39;</span><span class="p">}</span>
+    <span class="k">if</span> <span class="ow">not</span> <span class="n">string</span><span class="p">:</span>
+        <span class="k">return</span> <span class="s1">&#39;&#39;</span>
+    <span class="k">return</span> <span class="n">nato</span><span class="p">[</span><span class="n">string</span><span class="p">[</span><span class="mi">0</span><span class="p">]]</span> <span class="o">+</span> <span class="s1">&#39; &#39;</span> <span class="o">+</span> <span class="n">convert2nato</span><span class="p">(</span><span class="n">string</span><span class="p">[</span><span class="mi">1</span><span class="p">:])</span>
+
+<span class="n">inp</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s1">&#39;Insira uma palavra: &#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">convert2nato</span><span class="p">(</span><span class="n">inp</span><span class="p">))</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>Insira uma palavra: Hello
+Hotel Echo Lima Lima Oscar 
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h1 id="Exercise-179:-Recursive-Square-Root">Exercise 179: Recursive Square Root<a class="anchor-link" href="#Exercise-179:-Recursive-Square-Root">&#182;</a></h1><p>Exercise 74 explored how iteration can be used to compute the square root of a
+number. In that exercise a better approximation of the square root was generated with
+each additional loop iteration. In this exercise you will use the same approximation
+strategy, but you will use recursion instead of a loop.
+Create a square root function with two parameters. The first parameter, n, will
+be the number for which the square root is being computed. The second parameter,
+guess, will be the current guess for the square root. The guess parameter should have
+a default value of 1.0. Do not provide a default value for the first parameter.
+Your square root function will be recursive. The base case occurs when guess2 is
+within 10−12 of n. In this case your function should return guess because it is close
+enough to the square root of n. Otherwise your function should return the result of
+calling itself recursively with n as the first parameter and
+guess+ n
+guess
+2 as the second
+parameter.
+Write a main program that demonstrate your square root function by computing
+the square root of several different values. When you call your square root function
+from the main program you should only pass one parameter to it so that the default
+value is used for guess.</p>
+
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[11]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">raiz</span><span class="p">(</span><span class="n">n</span><span class="p">,</span> <span class="n">guess</span><span class="o">=</span><span class="mf">1.0</span><span class="p">):</span>
+    <span class="k">if</span> <span class="nb">abs</span><span class="p">(</span><span class="n">guess</span> <span class="o">*</span> <span class="n">guess</span> <span class="o">-</span> <span class="n">n</span><span class="p">)</span> <span class="o">&lt;</span> <span class="mf">1e-12</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">guess</span>
+    <span class="k">return</span> <span class="n">raiz</span><span class="p">(</span><span class="n">n</span><span class="p">,</span> <span class="p">(</span><span class="n">guess</span> <span class="o">+</span> <span class="n">n</span><span class="o">/</span><span class="n">guess</span><span class="p">)</span><span class="o">/</span><span class="mi">2</span><span class="p">)</span>
+<span class="k">def</span> <span class="nf">main</span><span class="p">():</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">raiz</span><span class="p">(</span><span class="mi">2</span><span class="p">))</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">raiz</span><span class="p">(</span><span class="mi">4</span><span class="p">))</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">raiz</span><span class="p">(</span><span class="mi">9</span><span class="p">))</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">raiz</span><span class="p">(</span><span class="mi">15</span><span class="p">))</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">raiz</span><span class="p">(</span><span class="mi">999</span><span class="p">))</span>
+<span class="n">main</span><span class="p">()</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>1.414213562373095
+2.000000000000002
+3.0
+3.872983346207433
+31.606961258558215
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
@@ -14402,70 +14590,6 @@ appropriate error message if the user enters a negative value.</p>
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h1 id="Exercise-176:The-NATO-Phonetic-Alphabet">Exercise 176:The NATO Phonetic Alphabet<a class="anchor-link" href="#Exercise-176:The-NATO-Phonetic-Alphabet">&#182;</a></h1><p>A spelling alphabet is a set of words, each of which stands for one of the 26 letters
-in the alphabet. While many letters are easily misheard over a low quality or noisy
-communication channel, the words used to represent the letters in a spelling alphabet
-are generally chosen so that each sounds distinct and is difficult to confuse with any
-other. The NATO phonetic alphabet is a widely used spelling alphabet. Each letter
-and its associated word is shown in Table8.1.
-Write a program that reads a word from the user and then displays its phonetic
-spelling. For example, if the user enters Hello then the program should output
-Hotel Echo Lima Lima Oscar. Your program should use a recursive function to perform this task. Do not use a loop anywhere in your solution. Any non-letter
-characters entered by the user should be ignored.</p>
-
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[8]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">re</span>
-<span class="k">def</span> <span class="nf">convert2nato</span><span class="p">(</span><span class="n">string</span><span class="p">):</span>
-    <span class="n">string</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;\W&#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">string</span><span class="o">.</span><span class="n">upper</span><span class="p">())</span>
-    <span class="n">nato</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;A&#39;</span><span class="p">:</span><span class="s1">&#39;Alpha&#39;</span><span class="p">,</span> <span class="s1">&#39;B&#39;</span><span class="p">:</span><span class="s1">&#39;Bravo&#39;</span><span class="p">,</span><span class="s1">&#39;C&#39;</span><span class="p">:</span><span class="s1">&#39;Charlie&#39;</span><span class="p">,</span> <span class="s1">&#39;D&#39;</span><span class="p">:</span><span class="s1">&#39;Delta&#39;</span><span class="p">,</span> <span class="s1">&#39;E&#39;</span><span class="p">:</span><span class="s1">&#39;Echo&#39;</span><span class="p">,</span> <span class="s1">&#39;F&#39;</span><span class="p">:</span><span class="s1">&#39;Foxtrot&#39;</span><span class="p">,</span> 
-            <span class="s1">&#39;G&#39;</span><span class="p">:</span><span class="s1">&#39;Golf&#39;</span><span class="p">,</span><span class="s2">&quot;H&quot;</span><span class="p">:</span><span class="s2">&quot;Hotel&quot;</span><span class="p">,</span> <span class="s1">&#39;I&#39;</span><span class="p">:</span><span class="s1">&#39;India&#39;</span><span class="p">,</span> <span class="s1">&#39;J&#39;</span><span class="p">:</span><span class="s1">&#39;Juliet&#39;</span><span class="p">,</span> <span class="s1">&#39;K&#39;</span><span class="p">:</span><span class="s1">&#39;Kilo&#39;</span><span class="p">,</span> <span class="s1">&#39;L&#39;</span><span class="p">:</span><span class="s1">&#39;Lima&#39;</span><span class="p">,</span> 
-            <span class="s1">&#39;M&#39;</span><span class="p">:</span><span class="s1">&#39;Mike&#39;</span><span class="p">,</span> <span class="s1">&#39;N&#39;</span><span class="p">:</span><span class="s1">&#39;November&#39;</span><span class="p">,</span> <span class="s1">&#39;O&#39;</span><span class="p">:</span><span class="s1">&#39;Oscar&#39;</span><span class="p">,</span> <span class="s1">&#39;P&#39;</span><span class="p">:</span><span class="s1">&#39;Papa&#39;</span><span class="p">,</span> <span class="s1">&#39;Q&#39;</span><span class="p">:</span><span class="s1">&#39;Quebec&#39;</span><span class="p">,</span>
-            <span class="s1">&#39;R&#39;</span><span class="p">:</span><span class="s1">&#39;Romeo&#39;</span><span class="p">,</span> <span class="s1">&#39;S&#39;</span><span class="p">:</span><span class="s1">&#39;Sierra&#39;</span><span class="p">,</span> <span class="s1">&#39;T&#39;</span><span class="p">:</span><span class="s1">&#39;Tango&#39;</span><span class="p">,</span> <span class="s1">&#39;U&#39;</span><span class="p">:</span><span class="s1">&#39;Uniform&#39;</span><span class="p">,</span> <span class="s1">&#39;V&#39;</span><span class="p">:</span><span class="s1">&#39;Victor&#39;</span><span class="p">,</span> 
-            <span class="s1">&#39;W&#39;</span><span class="p">:</span><span class="s1">&#39;Whiskey&#39;</span><span class="p">,</span> <span class="s1">&#39;X&#39;</span><span class="p">:</span><span class="s1">&#39;Xray&#39;</span><span class="p">,</span> <span class="s1">&#39;Y&#39;</span><span class="p">:</span><span class="s1">&#39;Yankee&#39;</span><span class="p">,</span> <span class="s1">&#39;Z&#39;</span><span class="p">:</span><span class="s1">&#39;Zulu&#39;</span><span class="p">}</span>
-    <span class="k">if</span> <span class="ow">not</span> <span class="n">string</span><span class="p">:</span>
-        <span class="k">return</span> <span class="s1">&#39;&#39;</span>
-    <span class="k">return</span> <span class="n">nato</span><span class="p">[</span><span class="n">string</span><span class="p">[</span><span class="mi">0</span><span class="p">]]</span> <span class="o">+</span> <span class="s1">&#39; &#39;</span> <span class="o">+</span> <span class="n">convert2nato</span><span class="p">(</span><span class="n">string</span><span class="p">[</span><span class="mi">1</span><span class="p">:])</span>
-
-<span class="n">inp</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s1">&#39;Insira uma palavra: &#39;</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">convert2nato</span><span class="p">(</span><span class="n">inp</span><span class="p">))</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-
-
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>Insira uma palavra: Hello
-Hotel Echo Lima Lima Oscar 
-</pre>
-</div>
-</div>
-
-</div>
-
-</div>
-
-</div>
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h1 id="Exercise-177:-Roman-Numerals">Exercise 177: Roman Numerals<a class="anchor-link" href="#Exercise-177:-Roman-Numerals">&#182;</a></h1><p>As the name implies, Roman numerals were developed in ancient Rome. Even after
 the Roman empire fell, its numerals continued to be widely used in Europe until the
 late middle ages, and its numerals are still used in limited circumstances today.
@@ -14520,80 +14644,6 @@ entered by the user is valid. Your program does not need to do any error checkin
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
 <pre>Insira um número romano: IV
 4
-</pre>
-</div>
-</div>
-
-</div>
-
-</div>
-
-</div>
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h1 id="Exercise-179:-Recursive-Square-Root">Exercise 179: Recursive Square Root<a class="anchor-link" href="#Exercise-179:-Recursive-Square-Root">&#182;</a></h1><p>Exercise 74 explored how iteration can be used to compute the square root of a
-number. In that exercise a better approximation of the square root was generated with
-each additional loop iteration. In this exercise you will use the same approximation
-strategy, but you will use recursion instead of a loop.
-Create a square root function with two parameters. The first parameter, n, will
-be the number for which the square root is being computed. The second parameter,
-guess, will be the current guess for the square root. The guess parameter should have
-a default value of 1.0. Do not provide a default value for the first parameter.
-Your square root function will be recursive. The base case occurs when guess2 is
-within 10−12 of n. In this case your function should return guess because it is close
-enough to the square root of n. Otherwise your function should return the result of
-calling itself recursively with n as the first parameter and
-guess+ n
-guess
-2 as the second
-parameter.
-Write a main program that demonstrate your square root function by computing
-the square root of several different values. When you call your square root function
-from the main program you should only pass one parameter to it so that the default
-value is used for guess.</p>
-
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[11]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">raiz</span><span class="p">(</span><span class="n">n</span><span class="p">,</span> <span class="n">guess</span><span class="o">=</span><span class="mf">1.0</span><span class="p">):</span>
-    <span class="k">if</span> <span class="nb">abs</span><span class="p">(</span><span class="n">guess</span> <span class="o">*</span> <span class="n">guess</span> <span class="o">-</span> <span class="n">n</span><span class="p">)</span> <span class="o">&lt;</span> <span class="mf">1e-12</span><span class="p">:</span>
-        <span class="k">return</span> <span class="n">guess</span>
-    <span class="k">return</span> <span class="n">raiz</span><span class="p">(</span><span class="n">n</span><span class="p">,</span> <span class="p">(</span><span class="n">guess</span> <span class="o">+</span> <span class="n">n</span><span class="o">/</span><span class="n">guess</span><span class="p">)</span><span class="o">/</span><span class="mi">2</span><span class="p">)</span>
-<span class="k">def</span> <span class="nf">main</span><span class="p">():</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">raiz</span><span class="p">(</span><span class="mi">2</span><span class="p">))</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">raiz</span><span class="p">(</span><span class="mi">4</span><span class="p">))</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">raiz</span><span class="p">(</span><span class="mi">9</span><span class="p">))</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">raiz</span><span class="p">(</span><span class="mi">15</span><span class="p">))</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">raiz</span><span class="p">(</span><span class="mi">999</span><span class="p">))</span>
-<span class="n">main</span><span class="p">()</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-
-
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>1.414213562373095
-2.000000000000002
-3.0
-3.872983346207433
-31.606961258558215
 </pre>
 </div>
 </div>
@@ -14661,6 +14711,90 @@ solution must use recursion. It cannot contain any loops.</p>
 <pre>Valor total: 1.25
 Quantidade de moedas: 8
 É possível trocar $1.25 com 8 moedas
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h1 id="Exercise-182:-Spelling-with-Element-Symbols">Exercise 182: Spelling with Element Symbols<a class="anchor-link" href="#Exercise-182:-Spelling-with-Element-Symbols">&#182;</a></h1><p>Each chemical element has a standard symbol that is one, two or three letters long.
+One game that some people like to play is to determine whether or not a word can be
+spelled using only element symbols. For example, silicon can be spelled using the
+symbols Si, Li, C, O and N. However, hydrogen cannot be spelled with any combination of element symbols.
+Write a recursive function that determines whether or not a word can be spelled
+using only element symbols. Your function will require two parameters: the word that you are trying to spell and a list of the symbols that can be used. It will return a
+string containing the symbols used to achieve the spelling as its result, or an empty
+string if no spelling exists. Capitalization should be ignored when your function
+searches for a spelling.
+Create a program that uses your function to find and display all of the element
+names that can be spelled using only element symbols. Display the names of the elements along with the sequences of symbols. For example, one line of your output
+will be:
+Silver can be spelled as SiLvEr
+Your program will use the elements data set, which can be downloaded from the
+author’s website. This data set includes the names and symbols of all 118 chemical
+elements.</p>
+
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[22]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">escreve_simb</span><span class="p">(</span><span class="n">string</span><span class="p">,</span> <span class="n">symbols</span><span class="p">,</span> <span class="n">spell</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">):</span>
+    <span class="n">string</span> <span class="o">=</span> <span class="n">string</span><span class="o">.</span><span class="n">casefold</span><span class="p">()</span>
+    <span class="k">if</span> <span class="ow">not</span> <span class="n">string</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">spell</span>
+    <span class="k">for</span> <span class="n">sym</span> <span class="ow">in</span> <span class="n">symbols</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">string</span><span class="p">[:</span><span class="nb">len</span><span class="p">(</span><span class="n">sym</span><span class="p">)]</span> <span class="o">==</span> <span class="n">sym</span><span class="o">.</span><span class="n">lower</span><span class="p">():</span>
+            <span class="n">spell</span><span class="o">+=</span><span class="n">sym</span>
+            <span class="k">break</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">return</span> <span class="s1">&#39;&#39;</span>
+    
+    <span class="k">return</span> <span class="n">escreve_simb</span><span class="p">(</span><span class="n">string</span><span class="p">[</span><span class="nb">len</span><span class="p">(</span><span class="n">sym</span><span class="p">):],</span> <span class="n">symbols</span><span class="p">,</span> <span class="n">spell</span><span class="p">)</span>
+
+<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;elements.txt&quot;</span><span class="p">,</span> <span class="s2">&quot;r&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+    <span class="n">elementos</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="n">linha</span><span class="o">.</span><span class="n">rstrip</span><span class="p">()</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;,&#39;</span><span class="p">)[</span><span class="mi">1</span><span class="p">:]</span> <span class="k">for</span> <span class="n">linha</span> <span class="ow">in</span> <span class="n">f</span><span class="p">)</span>
+<span class="n">simbolos</span> <span class="o">=</span> <span class="n">elementos</span><span class="o">.</span><span class="n">keys</span><span class="p">()</span>
+
+<span class="k">for</span> <span class="n">elemento</span> <span class="ow">in</span> <span class="n">elementos</span><span class="o">.</span><span class="n">values</span><span class="p">():</span>
+    <span class="n">conv</span> <span class="o">=</span> <span class="n">escreve_simb</span><span class="p">(</span><span class="n">elemento</span><span class="p">,</span> <span class="n">simbolos</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">conv</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">elemento</span><span class="si">}</span><span class="s2"> pode ser escrito como </span><span class="si">{</span><span class="n">conv</span><span class="si">}</span><span class="s2">.&quot;</span><span class="p">)</span>
+    <span class="c1">#else:</span>
+    <span class="c1">#    print(f&quot;{elemento} não pode ser escrito com simbolos.&quot;)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>Carbon pode ser escrito como CArBON.
+Silicon pode ser escrito como SiLiCON.
+Phosphorus pode ser escrito como PHOSPHORuS.
+Copper pode ser escrito como COPPEr.
+Silver pode ser escrito como SiLvEr.
+Tin pode ser escrito como TiN.
+Xenon pode ser escrito como XeNON.
 </pre>
 </div>
 </div>
